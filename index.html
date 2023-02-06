@@ -326,13 +326,26 @@
                     </li>
                 </ul>
             </div>
+            <div class="subscribe-footer">
+                <form class="subscribe-form">
+                    <label class="subscribe-desc">
+                        <span class="subscribe-title">Subscribe</span>
+                        <input class="subscribe-field" type="email" name="subscribe-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="E-mail">
+                        <button class="subscribe-btn" type="submit">Subscribe
+                            <svg class="subscribe-icon" width="24px" height="20px">
+                                <use href="./images/icons.svg#icon-plane"></use>
+                            </svg>
+                        </button>
+                    </label>
+                </form>
+            </div>
         </div>    
     </footer>
     <!-- ============/footer -->
 
     <!-- Modal window -->
 
-    <div class="modal-background" data-modal>
+    <div class="modal-background is-hidden" data-modal>
         <div class="modal-window">
             <button class="modal-close-button" type="button" data-modal-close>
                 <svg class="modal-image" width="8px" height="8px">
@@ -342,7 +355,7 @@
 
             <form class="modal-form">
                 <p class="modal-title">Leave your contacts and we will call you back</p>
-                <label class="modal-field-description" ><span class="modal-text">Name</span> 
+                <label class="modal-field-description"><span class="modal-text">Name</span> 
                     <span class="modal-icon-wrapper">
                         <input class="modal-field" type="text" name="user_name" pattern="[a-zA-Zа-яА-я]+" minlength="2" required>
                         <svg class="modal-field-icon" width="18px" height="18px">
@@ -360,7 +373,7 @@
                 </label>
                 <label class="modal-field-description"><span class="modal-text">Email</span>
                     <span class="modal-icon-wrapper">
-                        <input class="modal-field" type="email" name="user_email" required>
+                        <input class="modal-field" type="email" name="user_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                         <svg class="modal-field-icon" width="18px" height="24px">
                             <use href="./images/icons.svg#icon-email"></use>
                         </svg>
