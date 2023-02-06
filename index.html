@@ -332,7 +332,7 @@
 
     <!-- Modal window -->
 
-    <div class="modal-background is-hidden" data-modal>
+    <div class="modal-background" data-modal>
         <div class="modal-window">
             <button class="modal-close-button" type="button" data-modal-close>
                 <svg class="modal-image" width="8px" height="8px">
@@ -370,7 +370,12 @@
                     <textarea class="modal-field modal-comment" name="comment" placeholder="Text input"></textarea>
                 </label>
                 <input id="modal-check" name="user_policy" type="checkbox" class="policy-checkbox visually-hidden">
-                <label for="modal-check" class="policy-check-description"><span class="modal-text">I accept the terms and conditions of the <a href="">Privacy Policy</a></span></label>
+                <label for="modal-check" class="policy-check-description">
+                    <span class="modal-text">I accept the terms and conditions of the <a href="">Privacy Policy</a></span>
+                    <svg class="policy-icon" width="10px" height="8px">
+                        <use href="./images/icons.svg#icon-check"></use>
+                    </svg>
+                </label>
                 <button type="submit" class="modal-submit-btn">Send</button>
             </form>
         </div>
