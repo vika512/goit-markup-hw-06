@@ -868,18 +868,29 @@ body {
 }
 
 .modal-text {
+    display: block;
+    margin-bottom: 4px;
+
     font-weight: 400;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.04em;
     color: #8E8F99;
+} 
+
+.modal-text-check {
+    margin-bottom: 0px;
 }
+
+.modal-field-description:not(:nth-child(5)) {
+    margin-bottom: 8px;
+}  
+
 
 .modal-field {
     width: 100%;
     height: 40px;
     padding-left: 38px;
-    margin-top: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 
@@ -903,8 +914,7 @@ body {
 .modal-field-icon {
     position: absolute;
     top: 0;
-    left: 0;
-    margin-left: 16px;
+    left: 16px;
     fill: var(--primary-text-color);
 
     transition: fill var(--animation-dur-func);
@@ -991,6 +1001,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 16px 32px;
+    margin-bottom: 24px;
     border-radius: 4px;
     border: 1px solid transparent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
